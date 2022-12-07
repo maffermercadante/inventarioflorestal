@@ -20,11 +20,11 @@ plot(cub$vicc_est,res_padronizado , col=5 , pch="°" , xlab='vicc_est [m³]' , y
 
 #LIMITES ERRO
 tinf <- qt(0.025,nrow(cub)-1) #NROW EH n-1
-tsub <- qt(0.975,nrow(cub)-1)
+tsup <- qt(0.975,nrow(cub)-1)
 
 #LINHAS LIMITES
 abline(h=tinf, lty=2)
-abline(h=tsub, lty=2)
+abline(h=tsup, lty=2)
 
 #OUTLIER
 ii <- identify(cub$vicc_est,res_padronizado)
