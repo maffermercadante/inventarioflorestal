@@ -1,7 +1,7 @@
 cub <- read.csv2("cubagem.csv")
 View(cub)
 
-ajuste=lm(formula='I(log(vicc)~I(log(dap))+I(log(ht))', data=cub)
+ajuste=lm(formula='I(log(vicc))~I(log(dap))+I(log(ht))', data=cub)
 
 summary(ajuste)
 
